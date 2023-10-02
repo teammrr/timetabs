@@ -34,7 +34,7 @@ export default function Schedule(props){
                         <div key={sched.tt_time_zone} className="font-bold text-lg mb-2">{FormatTime(sched.tt_time_zone)}:00 - {sched.tt_time_end}</div>
                         <p key={sched.tt_tile} className="text-zinc-300 text-justify">{sched.tt_title}</p>
                     </div>
-                    <div className="px-6 pt-4 pb-2 text-justify">
+                    <div className="px-6 pb-2 text-justify">
                         <span key={sched.room} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-indigo-600 mr-2 mb-2">{sched.room || "Not assigned"}</span>
                         <span key={sched.fl_code} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-indigo-600 mr-2 mb-2">{sched.fl_code || "Not assigned"}</span>
                     </div>
