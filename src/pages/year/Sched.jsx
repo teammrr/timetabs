@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react"
 
 export default function Schedule(props){
+    var proxy = 'https://cors-anywhere.herokuapp.com/'
     const [sched, getSched] = useState([])
     
     const fetchUserData = async () => {
-        const proxy = 'https://cors-anywhere.herokuapp.com/';
-        const response = await fetch(proxy + "https://school-management-api.xeersoft.co.th/api/timetable/class-year/" + props.name)
+        const api = proxy + "https://school-management-api.xeersoft.co.th/api/timetable/class-year/"
+        const response = await fetch(api + props.name)
         const data = await response.json()
 
         getSched(data)
