@@ -10,6 +10,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.2.0"
+    "@astrojs/check": "^0.2.0",
+    "@astrojs/react": "^3.0.2",
+    "@astrojs/tailwind": "^5.0.0",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.0",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
+    "astro": "^3.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "solid-js": "^1.7.12",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
   }
 }
