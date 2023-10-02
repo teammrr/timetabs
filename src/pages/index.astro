@@ -1,16 +1,18 @@
 ---
 import Schedule from '../pages/year/Sched'
 import Layout from '../layouts/Layout.astro';
+// import Svelte from '../components/Svelte.svelte'
 ---
 
 <Layout title="TimeTabs">
 	<main>
-		<h1 class="h1 mt-5">
-			<span class="bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone">Year 13</span> Schedule
+		<h1 class="h1 mt-5 ">
+			<span class="bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone">Year 13</span> Room B
 		</h1>	
 	</main>
 	<div class="link-card-grid">
 		<Schedule name={"y13-comb"} client:load />
+		<!-- <Svelte client:load/> -->
 	</div>
 </Layout>
 
