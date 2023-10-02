@@ -7,7 +7,7 @@ export default function Schedule(props){
     const fetchUserData = async () => {
         const api = proxy + "https://school-management-api.xeersoft.co.th/api/timetable/class-year/"
         const api2 = "https://school-management-api.xeersoft.co.th/api/timetable/class-year/"
-        const response = await fetch(api2 + props.name)
+        const response = await fetch(api + props.name)
         const data = await response.json()
 
         getSched(data)
