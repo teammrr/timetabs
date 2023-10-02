@@ -4,8 +4,8 @@ export default function Schedule(props){
     const [sched, getSched] = useState([])
     
     const fetchUserData = async () => {
-        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-        const response = await fetch("https://school-management-api.xeersoft.co.th/api/timetable/class-year/" + props.name)
+        const proxy = 'https://cors-anywhere.herokuapp.com/';
+        const response = await fetch(proxy + "https://school-management-api.xeersoft.co.th/api/timetable/class-year/" + props.name)
         const data = await response.json()
 
         getSched(data)
