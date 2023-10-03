@@ -7,7 +7,7 @@ export default function Schedule(props){
     const fetchUserData = async () => {
         const api = proxy + "https://school-management-api.xeersoft.co.th/api/timetable/class-year/"
         const api2 = "https://school-management-api.xeersoft.co.th/api/timetable/class-year/"
-        const response = await fetch(api + props.name)
+        const response = await fetch(api2 + props.name)
         const data = await response.json()
 
         getSched(data)
@@ -21,6 +21,10 @@ export default function Schedule(props){
         const hours = time.split(":")[0]
         return hours
     }
+
+    // const today = "Today";
+    // const day = props.day
+    // const filteredSched = sched.filter((item) => item.tt_header_date.includes(today));
 
     // const hours = sched.tt_time_zone.split(":")[0];
     
